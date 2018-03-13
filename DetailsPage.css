@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0; }
+body { position: relative; overflow-y: scroll; overflow-x:hidden; }
+div { display: block; }
+.container { position: absolute; top: 0; margin: auto; width: 1920px; }
+.menu{color:transparent; display: block; position: absolute; width: 232px; height: 48px; top: 340px; cursor: pointer; }
+.menu.Introduction{left: 70px; }
+.menu.Level3{left: 357px; }
+.menu.Performance {left: 646px; }
+.menu.Tools {left: 932px; }
+.menu.Repository {left: 1222px; }
+.home{color:transparent; display: block; position: absolute; cursor: pointer; width: 306px; height: 48px; top: 36px; left: 71px;}
