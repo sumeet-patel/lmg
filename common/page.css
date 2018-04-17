@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; }
+body { position: relative; overflow-y: scroll; overflow-x:hidden; }
+div { display: block; }
+a, a:focus { outline: 0 !important; }
+.container { position: absolute; top: 0; margin: auto; width: 1920px; }
+.hyperlink { color: transparent; display: block; position: absolute; cursor: pointer; }
+/* .hyperlink:hover { border: dashed 1px rgba(0,255,0, 1); } */
+
+.iconnect .mainMenuHoveredItemContent.v1 { display: none; position: absolute; top: 35px; left: 647px; cursor: pointer; }
+.iconnect .hyperlink.to-mainMenuItem.v1 { width: 100px; height: 48px; top: 35px; left: 1302px; }
+.iconnect .mainMenuHoveredItemContent { display: none; position: absolute; top: 33px; left: 1104px; cursor: pointer; }
+.iconnect .hyperlink.to-mainMenuItem { width: 232px; height: 48px; top: 35px; left: 1147px; }
+.iconnect .hyperlink.to-homepage { width: 306px; height: 48px; top: 36px; left: 71px; }
+.iconnect .hyperlink.to-introduction { width: 232px; height: 48px; top: 340px; left: 70px; }
+.iconnect .hyperlink.to-level3 { width: 232px; height: 48px; top: 340px; left: 357px; }
+.iconnect .hyperlink.to-performance { width: 232px; height: 48px; top: 340px; left: 646px; }
+.iconnect .hyperlink.to-tools { width: 232px; height: 48px; top: 340px; left: 932px; }
+.iconnect .hyperlink.to-repository { width: 232px; height: 48px; top: 340px; left: 1222px; }
+
+
+.TFAR .mainMenuHoveredItemContent { display: none; position: absolute; top: 29px; left: 1496px; cursor: pointer; }
+.TFAR .hyperlink.to-mainMenuItem { width: 150px; height: 60px; top: 29px; left: 1496px; }
+.TFAR .hyperlink.home-to-dashboard { width: 168px; height: 48px; top: 276px; left: 885px; }
+.TFAR .hyperlink.to-homepage { width: 668px; height: 54px; top: 35px; left: 73px;  }
+.TFAR .hyperlink.to-dashboard { width: 182px; height: 130px; top: 310px; left: 305px; }
+.TFAR .hyperlink.to-trialBalance { width: 182px; height: 130px; top: 310px; left: 700px; }
+.TFAR .hyperlink.to-tfarForm { width: 182px; height: 130px; top: 310px; left: 1095px; }
+.TFAR .hyperlink.to-annexures { width: 182px; height: 130px; top: 310px; left: 1490px; }
