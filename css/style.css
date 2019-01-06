@@ -1,0 +1,116 @@
+.col-8 div{
+   padding: 0 1em;
+}
+
+/*header navigation*/
+.my-nav-bg{
+    background-color: #3E6887 ;
+}
+.nav-link{
+    color: white !important;
+}
+
+/*detaile page styling*/
+.strategy-detail-nav {
+    border-bottom: 1px solid #3E6887;
+    background-color: white;
+    max-width: 100%;
+    text-align: center;
+}
+.strategy-detail-nav a{
+    font: 1.2em !important;
+    color: rgb(31, 29, 29) !important;
+    font-weight: 700;
+}
+.sd-hover a:hover{
+    border-bottom: 2px solid #3E6887;
+}
+
+/*
+.sd-border-bottom a{
+    border-bottom: 2px solid #3E6887;
+}
+*/
+
+.strategy-detail-pages{
+    max-height: 480px;
+    max-width: 100%;
+}
+.sd-pages-fh {
+    max-height: inherit;
+    padding-top: 2rem;
+}
+#sd-pages{
+    overflow-y: scroll !important;
+}
+
+.sd-pages-dynemic{
+    display: none;
+}
+
+/*card styleing*/
+.card{
+    height: 100% !important;
+}
+.col-title{
+    margin-bottom: 1.5rem;
+}
+.pm-cards{
+    max-width: fit-content;
+    padding: 3rem 2rem;
+}
+.border-success{
+    border-color: rgb(161, 161, 161) !important;
+}
+.card-h{
+    padding: .50rem .50rem;
+    border-bottom: none;
+}
+.card-h-p{
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.card-h-div{
+    padding: .50rem;
+    background-color: rgb(97, 96, 96) !important;
+    color: whitesmoke;
+}
+#card-h-div-input{
+    padding: 0;
+    background-color: royalblue !important;
+}
+#card-h-div-process{
+    padding: 0;
+    background-color: rgb(252, 87, 27) !important;
+}
+#card-h-div-output{
+    padding: 0;
+    background-color: rgb(71, 150, 82) !important;
+}
+.card-h-div a{
+    padding: .50rem;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+}
+.card-h-div a:hover{
+    text-decoration: none;
+}
+.card-f{
+    background-color: rgb(161, 161, 161) !important;
+    padding: .50rem .50rem;
+    border-top: none;
+}
+.card-f-p{
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.card-f-div{
+    padding: .50rem;
+    color: rgb(24, 24, 24);
+}
+.card-b ul{
+    padding-inline-start: 20px;
+    font-size: .75rem;
+    font-weight: 500;
+}

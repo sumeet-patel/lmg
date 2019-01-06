@@ -1,5 +1,5 @@
 * { margin: 0; padding: 0; }
-body { position: relative; overflow-y: scroll; overflow-x:hidden; }
+body { position: relative; overflow-y: scroll; overflow-x:hidden;}
 div { display: block; }
 a, a:focus { outline: 0 !important; }
 .container { position: absolute; top: 0; margin: auto; width: 1920px; }
@@ -26,3 +26,5 @@ a, a:focus { outline: 0 !important; }
 .TFAR .hyperlink.to-trialBalance { width: 182px; height: 130px; top: 310px; left: 700px; }
 .TFAR .hyperlink.to-tfarForm { width: 182px; height: 130px; top: 310px; left: 1095px; }
 .TFAR .hyperlink.to-annexures { width: 182px; height: 130px; top: 310px; left: 1490px; }
+
+
