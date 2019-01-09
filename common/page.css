@@ -1,30 +1,123 @@
-* { margin: 0; padding: 0; }
-body { position: relative; overflow-y: scroll; overflow-x:hidden;}
-div { display: block; }
-a, a:focus { outline: 0 !important; }
-.container { position: absolute; top: 0; margin: auto; width: 1920px; }
-.hyperlink { color: transparent; display: block; position: absolute; cursor: pointer; }
-/* .hyperlink:hover { border: dashed 1px rgba(0,255,0, 1); } */
+/* DetailsPage CSS */
+.col-8 div{
+  padding: 0 1em;
+}
 
-.iconnect .mainMenuHoveredItemContent.v1 { display: none; position: absolute; top: 35px; left: 647px; cursor: pointer; }
-.iconnect .hyperlink.to-mainMenuItem.v1 { width: 100px; height: 48px; top: 35px; left: 1302px; }
-.iconnect .mainMenuHoveredItemContent { display: none; position: absolute; top: 33px; left: 1104px; cursor: pointer; }
-.iconnect .hyperlink.to-mainMenuItem { width: 232px; height: 48px; top: 35px; left: 1147px; }
-.iconnect .hyperlink.to-homepage { width: 306px; height: 48px; top: 36px; left: 71px; }
-.iconnect .hyperlink.to-introduction { width: 232px; height: 48px; top: 340px; left: 70px; }
-.iconnect .hyperlink.to-level3 { width: 232px; height: 48px; top: 340px; left: 357px; }
-.iconnect .hyperlink.to-performance { width: 232px; height: 48px; top: 340px; left: 646px; }
-.iconnect .hyperlink.to-tools { width: 232px; height: 48px; top: 340px; left: 932px; }
-.iconnect .hyperlink.to-repository { width: 232px; height: 48px; top: 340px; left: 1222px; }
+/*DetailsPage CSS
+header navigation*/
+.my-nav-bg{
+   background-color: #3E6887 ;
+}
+.nav-link{
+   color: white !important;
+}
 
+/* DetailsPage CSS
+detaile page styling*/
+.strategy-detail-nav {
+   border-bottom: 1px solid #3E6887;
+   background-color: white;
+   max-width: 100%;
+   text-align: center;
+}
+.strategy-detail-nav a{
+   font: 1.2em !important;
+   color: rgb(31, 29, 29) !important;
+   font-weight: 700;
+}
 
-.TFAR .mainMenuHoveredItemContent { display: none; position: absolute; top: 29px; left: 1496px; cursor: pointer; }
-.TFAR .hyperlink.to-mainMenuItem { width: 150px; height: 60px; top: 29px; left: 1496px; }
-.TFAR .hyperlink.home-to-dashboard { width: 168px; height: 48px; top: 276px; left: 885px; }
-.TFAR .hyperlink.to-homepage { width: 668px; height: 54px; top: 35px; left: 73px;  }
-.TFAR .hyperlink.to-dashboard { width: 182px; height: 130px; top: 310px; left: 305px; }
-.TFAR .hyperlink.to-trialBalance { width: 182px; height: 130px; top: 310px; left: 700px; }
-.TFAR .hyperlink.to-tfarForm { width: 182px; height: 130px; top: 310px; left: 1095px; }
-.TFAR .hyperlink.to-annexures { width: 182px; height: 130px; top: 310px; left: 1490px; }
+.sd-hover a:hover{
+   border-bottom: 2px solid #3E6887 !important;
+}
 
+/*
+.sd-border-bottom a{
+   border-bottom: 2px solid #3E6887;
+}
+*/
 
+.strategy-detail-pages{
+   max-height: 480px;
+   max-width: 100%;
+}
+.sd-pages-fh {
+   max-height: inherit;
+   padding-top: 2rem;
+}
+#sd-pages{
+   overflow-y: scroll !important;
+}
+
+.sd-pages-dynemic{
+   display: none;
+}
+
+/* DetailsPage CSS 
+card styleing*/
+.card{
+   height: 100% !important;
+}
+.col-title{
+   margin-bottom: 1.5rem;
+}
+.pm-cards{
+   max-width: fit-content;
+   padding: 3rem 2rem;
+}
+.border-success{
+   border-color: rgb(161, 161, 161) !important;
+}
+.card-h{
+   padding: .50rem .50rem;
+   border-bottom: none;
+}
+.card-h-p{
+   margin-bottom: 0.5rem;
+   font-size: 0.75rem;
+}
+.card-h-div{
+   padding: .50rem;
+   background-color: rgb(97, 96, 96) !important;
+   color: whitesmoke;
+}
+#card-h-div-input{
+   padding: 0;
+   background-color: royalblue !important;
+}
+#card-h-div-process{
+   padding: 0;
+   background-color: rgb(252, 87, 27) !important;
+}
+#card-h-div-output{
+   padding: 0;
+   background-color: rgb(71, 150, 82) !important;
+}
+.card-h-div a{
+   padding: .50rem;
+   color: whitesmoke;
+   display: block;
+   text-align: center;
+}
+.card-h-div a:hover{
+   text-decoration: none;
+}
+.card-f{
+   background-color: rgb(161, 161, 161) !important;
+   padding: .50rem .50rem;
+   border-top: none;
+}
+.card-f-p{
+   margin-bottom: 0.5rem;
+   font-size: 0.75rem;
+}
+.card-f-div{
+   padding: .50rem;
+   color: rgb(24, 24, 24);
+}
+.card-b ul{
+   padding-inline-start: 20px;
+   font-size: .75rem;
+   font-weight: 500;
+}
+
+/* DetailsPage CSS End */

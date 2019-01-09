@@ -1,53 +1,72 @@
-$(function() {
-    adjustContainerSize();
+/*
+DetailsPage JavaScript
+*/
+let intro = document.getElementById("sd-intro");
+let introDiv = document.getElementById("sd-intro-div");
+let level3 = document.getElementById("sd-level3");
+let level3Div = document.getElementById("sd-level3-div");
+let perform = document.getElementById("sd-perform");
+let performDiv = document.getElementById("sd-perform-div");
+let tools = document.getElementById("sd-tools");
+let toolsDiv = document.getElementById("sd-tools-div");
+let repo = document.getElementById("sd-repo");
+let repoDiv = document.getElementById("sd-repo-div");
+let sd_pages = document.getElementById("sd-pages");
 
-    $('.hyperlink.to-mainMenuItem').on('mouseenter', function() {
-        $(this).addClass('hyperlink-to-mainMenuItem-showonhover');
-        updateHover();
-    });
 
-    $('.hyperlink.to-mainMenuItem').on('mouseleave', function(){
-        $('.hyperlink-to-mainMenuItem-showonhover').removeClass('hyperlink-to-mainMenuItem-showonhover');
-        updateHover();
-    });
-
-    $('.mainMenuHoveredItemContent').on('mouseenter', function(){
-        $(this).addClass('mainMenuHoveredItemContent-showonhover');
-        updateHover();
-    });
-
-    $('.mainMenuHoveredItemContent').on('mouseleave', function(){
-        $(this).removeClass('mainMenuHoveredItemContent-showonhover');
-        updateHover();
-    });
-});
-
-$( window ).resize(function() {
-    adjustContainerSize();
-});
-
-function adjustContainerSize() {
-    var $window = $(window);
-    var width = $window.outerWidth();
-    var height = $window.outerHeight();
-
-    var $container = $('.container');
-
-    var scaleX = width / 1920;
-    var scaleY = height / 1920;
-
-    var scale = scaleX > scaleY ? scaleX : scaleY;
-
-    console.log("$('.container').css({'transform', 'scale('" + scale + "'), translate-origin: 'top left'})");
-
-    $('.container').css({'transform': 'scale(' + scale + ')', 'transform-origin': 'top left'});
-}
-
-function updateHover() {
-    if ($('.hyperlink.to-mainMenuItem').hasClass('hyperlink-to-mainMenuItem-showonhover') || $('.mainMenuHoveredItemContent').hasClass('mainMenuHoveredItemContent-showonhover')) {
-        $('.mainMenuHoveredItemContent').show();
-    }
-    else {
-        $('.mainMenuHoveredItemContent').hide();
-    }
+/*
+let sd_pages = document.getElementById("sd-pages");
+let sd_level3_div = document.getElementById("sd-level3-div");
+level3.onclick = function(){
+    alert("Jay Bhole");
+    let intro = document.getElementById("sd-intro-div");
+    intro.setAttribute('class' , 'sd-pages-dynemic');
+    level3.removeAttribute('class');
+    sd_pages.appendChild(sd_level3_div);
 };
+*/
+intro.onclick = function(){
+    level3Div.setAttribute('class' , 'sd-pages-dynemic');
+    performDiv.setAttribute('class' , 'sd-pages-dynemic');
+    toolsDiv.setAttribute('class' , 'sd-pages-dynemic');
+    repoDiv.setAttribute('class' , 'sd-pages-dynemic');
+    swapDiv(introDiv);};
+
+level3.onclick = function(){
+    introDiv.setAttribute('class' , 'sd-pages-dynemic');
+    performDiv.setAttribute('class' , 'sd-pages-dynemic');
+    toolsDiv.setAttribute('class' , 'sd-pages-dynemic');
+    repoDiv.setAttribute('class' , 'sd-pages-dynemic');
+    swapDiv(level3Div);};
+
+
+perform.onclick = function(){
+    introDiv.setAttribute('class' , 'sd-pages-dynemic');
+    level3Div.setAttribute('class' , 'sd-pages-dynemic');
+    toolsDiv.setAttribute('class' , 'sd-pages-dynemic');
+    repoDiv.setAttribute('class' , 'sd-pages-dynemic');
+    swapDiv(performDiv);};
+
+tools.onclick = function(){
+    introDiv.setAttribute('class' , 'sd-pages-dynemic');
+    level3Div.setAttribute('class' , 'sd-pages-dynemic');
+    performDiv.setAttribute('class' , 'sd-pages-dynemic');
+    repoDiv.setAttribute('class' , 'sd-pages-dynemic');
+    swapDiv(toolsDiv);};
+
+repo.onclick = function(){
+    introDiv.setAttribute('class' , 'sd-pages-dynemic');
+    performDiv.setAttribute('class' , 'sd-pages-dynemic');
+    toolsDiv.setAttribute('class' , 'sd-pages-dynemic');
+    level3Div.setAttribute('class' , 'sd-pages-dynemic');
+    swapDiv(repoDiv);};
+
+function swapDiv (new_div) {
+    new_div.removeAttribute('class');
+    let clone = new_div.cloneNode(true);
+    while (sd_pages.firstChild) sd_pages.firstChild.remove();
+    sd_pages.appendChild(clone);
+}
+/*
+DetailsPage JavaScript End
+*/
