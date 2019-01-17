@@ -15,21 +15,31 @@ header navigation*/
 /* DetailsPage CSS
 detaile page styling*/
 .strategy-detail-nav {
-   border-bottom: 1px solid #3E6887;
    background-color: white;
    max-width: 100%;
    text-align: center;
 }
 .strategy-detail-nav a{
    font: 1.2em !important;
-   color: rgb(31, 29, 29) !important;
+   color: whitesmoke !important;
    font-weight: 700;
 }
-
-.sd-hover a:hover{
-   border-bottom: 2px solid #3E6887 !important;
+.sd-hover div{
+   margin: 0 .5rem;
+   background-color: #3E6887;
+   border: 3px solid #3E6887;
+   border-radius: 6%;
 }
-
+.sd-hover div:hover{
+   border: 3px solid #f54d0bfd;
+}
+.sd-hover div:active{
+   background-color: #f54d0bfd;
+}
+.sd-onclick{
+   background-color: #f54d0bfd !important;
+   border: 3px solid #f54d0bfd !important;
+}
 /*
 .sd-border-bottom a{
    border-bottom: 2px solid #3E6887;

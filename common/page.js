@@ -30,14 +30,18 @@ intro.onclick = function(){
     performDiv.setAttribute('class' , 'sd-pages-dynemic');
     toolsDiv.setAttribute('class' , 'sd-pages-dynemic');
     repoDiv.setAttribute('class' , 'sd-pages-dynemic');
-    swapDiv(introDiv);};
+    swapDiv(introDiv);
+    intro.classList.add("sd-onclick" , "col");
+};
 
 level3.onclick = function(){
     introDiv.setAttribute('class' , 'sd-pages-dynemic');
     performDiv.setAttribute('class' , 'sd-pages-dynemic');
     toolsDiv.setAttribute('class' , 'sd-pages-dynemic');
     repoDiv.setAttribute('class' , 'sd-pages-dynemic');
-    swapDiv(level3Div);};
+    swapDiv(level3Div);
+    level3.classList.add("sd-onclick" , "col");
+};
 
 
 perform.onclick = function(){
@@ -45,27 +49,38 @@ perform.onclick = function(){
     level3Div.setAttribute('class' , 'sd-pages-dynemic');
     toolsDiv.setAttribute('class' , 'sd-pages-dynemic');
     repoDiv.setAttribute('class' , 'sd-pages-dynemic');
-    swapDiv(performDiv);};
+    swapDiv(performDiv);
+    perform.classList.add("sd-onclick" , "col");
+};
 
 tools.onclick = function(){
     introDiv.setAttribute('class' , 'sd-pages-dynemic');
     level3Div.setAttribute('class' , 'sd-pages-dynemic');
     performDiv.setAttribute('class' , 'sd-pages-dynemic');
     repoDiv.setAttribute('class' , 'sd-pages-dynemic');
-    swapDiv(toolsDiv);};
+    swapDiv(toolsDiv);
+    tools.classList.add("sd-onclick" , "col");
+};
 
 repo.onclick = function(){
     introDiv.setAttribute('class' , 'sd-pages-dynemic');
     performDiv.setAttribute('class' , 'sd-pages-dynemic');
     toolsDiv.setAttribute('class' , 'sd-pages-dynemic');
     level3Div.setAttribute('class' , 'sd-pages-dynemic');
-    swapDiv(repoDiv);};
+    swapDiv(repoDiv);
+    repo.classList.add("sd-onclick" , "col");
+};
 
 function swapDiv (new_div) {
     new_div.removeAttribute('class');
     let clone = new_div.cloneNode(true);
     while (sd_pages.firstChild) sd_pages.firstChild.remove();
     sd_pages.appendChild(clone);
+    intro.setAttribute('class' , "col");
+    level3.setAttribute('class' , "col");
+    perform.setAttribute('class' , "col");
+    tools.setAttribute('class' , "col");
+    repo.setAttribute('class' , "col");
 }
 /*
 DetailsPage JavaScript End
